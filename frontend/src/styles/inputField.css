@@ -1,0 +1,41 @@
+.input-field {
+  position: relative;
+}
+
+.input-field > * {
+  height: 100%;
+  font-size: 1.5em;
+  border-radius: 40px;
+  font-weight: bolder;
+  border: none;
+}
+
+.input-field > input {
+  height: 2.5em;
+  width: 8em;
+  padding: 0 1em;
+}
+
+.input-field > button {
+  width: 5em;
+  height: 2.5em;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.error {
+  position: absolute;
+  font-size: 1em;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  width: 80%;
+  height: 2em;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  background-color: #ec280e;
+  color: white;
+  text-align: center;
+}

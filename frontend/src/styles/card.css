@@ -1,0 +1,58 @@
+.weather-card {
+  position: relative;
+  width: 80vw;
+  max-width: 30em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 50px;
+  border: 3px solid black;
+  padding: 1em;
+}
+
+.title > * {
+  justify-content: flex-start;
+  text-align: start;
+  padding: 0 16px;
+}
+.data-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.data-field > * {
+  width: 50%;
+  margin: 2px;
+}
+
+.weather-icon {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+.forecast-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .title > * {
+    justify-content: center;
+    text-align: center;
+    padding: 0 16px;
+  }
+  .weather-icon {
+    position: relative;
+    margin: 0 0 -12% 0;
+    padding: 0;
+    transform: translate(0, -25%);
+  }
+  .forecast-row {
+    flex-wrap: wrap;
+  }
+}
